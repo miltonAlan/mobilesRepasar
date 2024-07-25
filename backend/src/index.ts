@@ -33,7 +33,7 @@ import {OpenAIApi, Configuration} from 'openai'
 import * as path from "path";
 
 const configuration = new Configuration({
-    apiKey: process.env.OPENAI_API_KEY
+    apiKey: process.env.OPENAI_API_KEY 
 })
 const openai = new OpenAIApi(configuration)
 
