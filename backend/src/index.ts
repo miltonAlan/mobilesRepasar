@@ -1,9 +1,9 @@
 import cors from "cors"
 import multer from "multer";
 import * as dotenv from 'dotenv';
-import {v4 as uuidv4} from 'uuid';
-import express, {response} from "express"
-import {process_doc} from "./lang_script";
+import { v4 as uuidv4 } from 'uuid';
+import express, { response } from "express"
+import { process_doc } from "./lang_script";
 
 dotenv.config()
 const app = express()
@@ -29,11 +29,11 @@ const upload = multer({
     }
 })
 
-import {OpenAIApi, Configuration} from 'openai'
+import { OpenAIApi, Configuration } from 'openai'
 import * as path from "path";
 
 const configuration = new Configuration({
-    apiKey: process.env.OPENAI_API_KEY 
+    apiKey: process.env.OPENAI_API_KEY
 })
 const openai = new OpenAIApi(configuration)
 
@@ -74,7 +74,7 @@ app.get("/hola/:nombre/:apellido", (req, res) => {
     const nombre = req.params.nombre
     const apellido = req.params.apellido
     console.log("alguien ha ingresado su nombre")
-    res.send({nombre, apellido})
+    res.send({ nombre, apellido })
 })
 
 app.get('/nombres', (req, res) => {
@@ -84,13 +84,13 @@ app.get('/nombres', (req, res) => {
 })
 
 app.post('/nombres', (req, res) => {
-    const item = {...req.body, id: uuidv4()};
+    const item = { ...req.body, id: uuidv4() };
     names.push(item)
     res.send(item)
 })
 
 app.post('/openapi', async (req, res) => {
-    const {prompt} = req.body
+    const { prompt } = req.body
     const completion = await openai.createCompletion({
         model: 'gpt-3.5-turbo-instruct',
         // model: 'gpt-4o',
@@ -99,7 +99,7 @@ app.post('/openapi', async (req, res) => {
     })
 
     // @ts-ignore
-    res.send({result: completion.data.choices[0].text.trim(), token: completion.data.usage.total_tokens})
+    res.send({ result: completion.data.choices[0].text.trim(), token: completion.data.usage.total_tokens })
 })
 
 app.delete('/nombres/:id', (req, res) => {
@@ -118,10 +118,10 @@ app.put('/nombres/:id', (req, res) => {
     const index = names.findIndex(n => n.id === req.params.id)
     if (index === -1)
         res.status(404).end()
-    names[index] = {...req.body, id: req.params.id}
+    names[index] = { ...req.body, id: req.params.id }
     res.status(204).end()
 })
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`running application ${PORT}`)
 
 })
