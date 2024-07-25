@@ -1,0 +1,144 @@
+[33mcommit 709f23fc6a3302ccc51b354aae1f248d2b68c0e3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: mpaucar <miltonpaucar99@gmail.com>
+Date:   Thu Jul 25 11:28:38 2024 -0500
+
+    modifico logica para manejo de api key
+
+[33mcommit ff8ed10094062328898982db7315d57aa9b296ce[m
+Author: mpaucar <miltonpaucar99@gmail.com>
+Date:   Thu Jul 25 11:19:21 2024 -0500
+
+    reemplazo api key y modelo deprecado por funcional
+
+[33mcommit 5640d2ae648e514f49323ee10513e89ed811dc2c[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Pablo Caiza <pablocuri2015@hotmail.com>
+Date:   Tue Jul 25 20:56:27 2023 -0500
+
+    a
+
+[33mcommit e40aaae43b1ff7338b79cab0aae81d4d1025b622[m
+Author: Pablo Caiza <pablocuri2015@hotmail.com>
+Date:   Tue Jul 25 20:56:00 2023 -0500
+
+    llm
+
+[33mcommit 9e12f302c1bae723ccfb56b2539934e8003e5af8[m
+Author: Pablo Caiza <pablocuri2015@hotmail.com>
+Date:   Thu Jul 20 21:24:00 2023 -0500
+
+    langchain
+
+[33mcommit 171513f4ba1206a2101a4069f713d93575ca2697[m
+Author: pablo <pablocuri2015@hotmail.com>
+Date:   Fri Jun 30 08:13:56 2023 -0500
+
+    prueba
+
+[33mcommit 9cfc7f00c290713a987acb068eddda4fde5d5c54[m
+Author: pablo <pablocuri2015@hotmail.com>
+Date:   Wed Jun 28 17:09:16 2023 -0500
+
+    openia
+
+[33mcommit 97ff6539638b8166579fdd9eb1fd14d500ebef72[m
+Author: pablo <pablocuri2015@hotmail.com>
+Date:   Wed Jun 28 05:54:11 2023 -0500
+
+    fic
+
+[33mcommit 2a28db44ffce63e32ae7304265f45d212791567a[m
+Author: Pablo Caiza <pablocuri2015@hotmail.com>
+Date:   Sun Jun 25 13:16:24 2023 -0500
+
+    A
+
+[33mcommit 6537ad6a0b5b7c3b0ffb82a62546b1cded181098[m
+Author: Pablo Caiza <pablocuri2015@hotmail.com>
+Date:   Sun Jun 25 13:15:29 2023 -0500
+
+    a
+
+[33mcommit bb142434fc571edc4d293e6a72617fc4482e3374[m
+Author: Pablo Caiza <pablocuri2015@hotmail.com>
+Date:   Sun Jun 25 13:14:00 2023 -0500
+
+    fix git
+
+[33mcommit bec67a71eb231f3c55c21376523841f5ee5113b3[m
+Author: Pablo Caiza <pablocuri2015@hotmail.com>
+Date:   Sun Jun 25 13:10:15 2023 -0500
+
+    crud
+
+[33mcommit 9c5021b4f22032baf7570841c2e782c7913ee4f1[m
+Author: Pablo Caiza <pablocuri2015@hotmail.com>
+Date:   Sun Jun 25 13:06:52 2023 -0500
+
+    crud operations
+
+[33mcommit cf34bc40fddadd2538e276ad03dfaf0536b8c23b[m
+Merge: ef6781e 256a91d
+Author: Pablo Caiza <pablocuri2015@hotmail.com>
+Date:   Fri Jun 23 16:27:10 2023 -0500
+
+    Merge branch 'main' into homework
+
+[33mcommit 256a91d741ac5fac6d7c24de3020d16d1210e076[m
+Author: Pablo Caiza <pablocuri2015@hotmail.com>
+Date:   Fri Jun 23 16:20:40 2023 -0500
+
+    ok
+
+[33mcommit 69009b7d47822c5769f45b8198282d651714b2fe[m
+Author: pablo <pablocuri2015@hotmail.com>
+Date:   Fri Jun 23 15:21:12 2023 -0500
+
+    2 class
+
+[33mcommit ef6781ead3532336d4467f3cac55d1cdc229f5f4[m
+Author: Pablo Caiza <48301519+PabloCaiza@users.noreply.github.com>
+Date:   Fri Jun 23 17:13:57 2023 +0000
+
+    user create
+
+[33mcommit a9ee7ee7b7f398f7510d15ea532fa9b3c1ffc9bb[m
+Author: Pablo Caiza <48301519+PabloCaiza@users.noreply.github.com>
+Date:   Fri Jun 23 16:14:48 2023 +0000
+
+    brnach
+
+[33mcommit c1de6b4e453b032bcc13eaee1b6f546cf02ea903[m
+Author: Pablo Caiza <pablocuri2015@hotmail.com>
+Date:   Thu Jun 22 21:56:40 2023 -0500
+
+    list
+
+[33mcommit 0732406c7ffa4e0a4061b91dc6ce7a7a98ef8bcc[m
+Author: pablo <pablocuri2015@hotmail.com>
+Date:   Wed Jun 21 22:48:01 2023 -0500
+
+    clase 1
+
+[33mcommit c43efe1dea47b0d7ec40d3ef24c493a0c26ef664[m
+Author: pablo <pablocuri2015@hotmail.com>
+Date:   Wed Jun 21 07:48:31 2023 -0500
+
+    version 1
+
+[33mcommit 0d948b61331d7e6c16afe80378f1de1654507801[m
+Author: Pablo Caiza <48301519+PabloCaiza@users.noreply.github.com>
+Date:   Wed Jun 21 02:15:10 2023 +0000
+
+    changes
+
+[33mcommit cd0cc6db8fbc520bd1d1ccb25944e41a0c7517fd[m
+Author: Pablo Caiza <48301519+PabloCaiza@users.noreply.github.com>
+Date:   Sun Jun 18 23:50:31 2023 +0000
+
+    rest backend and react nativa froent with bottom navigation
+
+[33mcommit 60c19232b56bc1b406c6f3d5ecccf723ef100fd3[m
+Author: Pablo Caiza <48301519+PabloCaiza@users.noreply.github.com>
+Date:   Fri Jun 16 07:30:45 2023 -0500
+
+    Initial commit
