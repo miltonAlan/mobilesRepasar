@@ -3,7 +3,11 @@ npm install
 
 ## Ejecución
 
+- back
 npm run dev
+
+-front
+npm start
 
 ## Pruebas de Endpoints
 
