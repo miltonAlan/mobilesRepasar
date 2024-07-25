@@ -1,13 +1,22 @@
 import React from "react";
-import { View,Text } from "react-native";
+import { View, StyleSheet } from "react-native";
 import ProfileCard from "./ProfileCard";
 
-const Menu=()=>{
+const Menu = () => {
     return (
-        <View>
-            <ProfileCard/>
+        <View style={styles.container}>
+            <ProfileCard />
         </View>
-    )
-}
+    );
+};
 
-export default Menu
+const styles = StyleSheet.create({
+    container: {
+        flex: 1, // Ocupa todo el espacio disponible
+        justifyContent: 'center', // Centra el contenido verticalmente
+        alignItems: 'center', // Centra el contenido horizontalmente
+        backgroundColor: '#f5f5f5', // Opcional: color de fondo para mejor visibilidad
+    },
+});
+
+export default Menu;
