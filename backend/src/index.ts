@@ -33,7 +33,7 @@ import {OpenAIApi, Configuration} from 'openai'
 import * as path from "path";
 
 const configuration = new Configuration({
-    apiKey: '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'
+    apiKey: process.env.OPENAI_API_KEY
 })
 const openai = new OpenAIApi(configuration)
 
@@ -92,7 +92,8 @@ app.post('/nombres', (req, res) => {
 app.post('/openapi', async (req, res) => {
     const {prompt} = req.body
     const completion = await openai.createCompletion({
-        model: 'text-davinci-003',
+        model: 'gpt-3.5-turbo-instruct',
+        // model: 'gpt-4o',
         prompt: generatePrompt(prompt),
         temperature: 0.1
     })
