@@ -1,5 +1,4 @@
 import React from "react";
-import {View, Text} from "react-native";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs"
 import Menu from "./componentes/home/Menu";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'

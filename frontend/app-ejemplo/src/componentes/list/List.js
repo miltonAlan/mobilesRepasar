@@ -1,13 +1,13 @@
-import React, {useEffect, useState} from "react";
-import {View, Text, FlatList, TouchableOpacity, StyleSheet,StatusBar,Modal,Alert} from "react-native";
+import React, { useEffect, useState } from "react";
+import { View, Text, FlatList, TouchableOpacity, StyleSheet, StatusBar, Modal, Alert } from "react-native";
 import Task from "./Task";
 import Profile from "./Profile";
 
 
 const ListComponent = () => {
     const [taskItems, setTaskItems] = useState([]);
-    const [showProfile,setShowProfile]=useState(false)
-    const [task,setTask]=useState()
+    const [showProfile, setShowProfile] = useState(false)
+    const [task, setTask] = useState()
     useEffect(() => {
         fetchData()
     }, [])
@@ -22,19 +22,19 @@ const ListComponent = () => {
             console.error('error', e)
         }
     }
-    const Item = ({task, i}) => {
+    const Item = ({ task, i }) => {
         return (
             <TouchableOpacity style={styles.perItem} key={i} onPress={() => {
                 getProfile(task)
             }}>
-                <Task task={task}/>
+                <Task task={task} />
             </TouchableOpacity>
         )
     }
-    const closeProfile=()=>{
+    const closeProfile = () => {
         setShowProfile(!showProfile)
     }
-    const getProfile=(task)=>{
+    const getProfile = (task) => {
         setShowProfile(true)
         setTask(task)
     }
@@ -48,10 +48,9 @@ const ListComponent = () => {
                         <View style={styles.items}>
                             <FlatList
                                 data={taskItems}
-                                renderItem={({item, i}) => (
-                                    <Item task={item} i={i}/>
-                                )}
-                            >
+                                renderItem={({ item, i }) => (
+                                    <Item task={item} i={i} />
+                                )}>
                             </FlatList>
                         </View>
                     </View>
@@ -59,7 +58,7 @@ const ListComponent = () => {
                         transparent={true}
                         animationType={'slide'}
                         visible={showProfile}
-                        onRequestClose={()=>{
+                        onRequestClose={() => {
                             Alert.alert('modal has been close')
                             setShowProfile(!showProfile)
                         }}
@@ -67,7 +66,7 @@ const ListComponent = () => {
                         <View style={styles.centerView}>
                             <View style={styles.modalView}>
                                 <Text style={styles.modalText}>
-                                    <Profile task={task} closeProfile={closeProfile}/>
+                                    <Profile task={task} closeProfile={closeProfile} />
                                 </Text>
                             </View>
 
@@ -82,49 +81,49 @@ const ListComponent = () => {
 }
 const styles = StyleSheet.create({
     container: {
-        backgroundColor:'#E8EAED',
+        backgroundColor: '#E8EAED',
         marginTop: StatusBar.currentHeight || 0,
-        display:'flex'
+        display: 'flex'
     },
     taskWrapper: {
-        paddingTop:80,
-        paddingHorizontal:20,
-        height:900
+        paddingTop: 80,
+        paddingHorizontal: 20,
+        height: 900
     },
     sectionTitle: {
-        fontSize:24,
-        fontWeight:'bold'
+        fontSize: 24,
+        fontWeight: 'bold'
     },
     items: {},
-    perItem:{
+    perItem: {
     },
-    centerView:{
-        flex:1,
-        justifyContent:'center',
-        alignItems:'center',
-        marginTop:22
+    centerView: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 22
     },
-    modalView:{
-        margin:0,
-        backgroundColor:'white',
-        borderRadius:20,
-        padding:35,
-        alignItems:'center',
-        shadowColor:'#000',
-        width:'100%',
-        height:300,
-        shadowOffset:{
-            width:0,
-            height:2
+    modalView: {
+        margin: 0,
+        backgroundColor: 'white',
+        borderRadius: 20,
+        padding: 35,
+        alignItems: 'center',
+        shadowColor: '#000',
+        width: '100%',
+        height: 300,
+        shadowOffset: {
+            width: 0,
+            height: 2
         },
-        shadowOpacity:0.25,
-        shadowRadius:4,
-        elevation:5
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
+        elevation: 5
     },
-    modalText:{
-        marginBottom:15,
-        textAlign:'center',
-        width:'100%'
+    modalText: {
+        marginBottom: 15,
+        textAlign: 'center',
+        width: '100%'
     }
 
 });
