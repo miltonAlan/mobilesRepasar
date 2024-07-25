@@ -13,8 +13,8 @@ const tiktok = <Icon name={'sitemap'} size={30} color={'black'} />;
 
 const ProfileCard = () => {
     const user = {
-        avatar: "https://wallpapercave.com/uwp/uwp3658047.png",
-        coverPhoto: "https://wallpapercave.com/wp/nsu3cSp.jpg",
+        avatar: "https://wallpapercave.com/wp/wp1920915.jpg",
+        coverPhoto: "https://wallpapercave.com/uwp/uwp4446822.jpeg",
         name: "Milton"
     };
 
